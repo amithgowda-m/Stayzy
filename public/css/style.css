@@ -1,0 +1,75 @@
+body {
+    background-color: rgb(255, 200, 2);
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+.container{
+    flex:1;
+}
+
+/* Footer info */
+.f-info-links a {
+    text-decoration: none;
+    color: #222222;
+}
+
+.f-info-links a:hover {
+    text-decoration: underline;
+    color: #222222;
+}
+
+.f-info {
+    text-align: center;
+    display: flex;
+    height: 3rem;
+    background-color: gray;
+    flex-wrap: wrap;
+    justify-content: space-around; /* fixed */
+    align-items: center; /* fixed */
+}
+
+.f-info-links,
+.f-info-socials {
+    width: 100%;
+}
+
+.f-info-socials {
+    font-size: 1.2rem;
+}
+
+/* Cards */
+.card {
+    border: none !important;
+    margin-bottom: 2rem;
+}
+
+.card-img-top {
+    border-radius: 1rem !important;
+    width: 100%;
+    object-fit: cover !important;
+}
+
+.card-body {
+    padding: 0 !important;
+}
+
+.card-text {
+    font-weight: 400;
+}
+
+/* Card hover effect */
+.card-img-overlay {
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    pointer-events: none; /* Prevent blocking clicks */
+}
+
+.card:hover .card-img-overlay {
+    opacity: 0.3;
+    background-color: white;
+}
+
+.edit-btn{
+    
+}
